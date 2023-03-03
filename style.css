@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+}
+
+#fundo {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#geral {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    width: 40vw;
+    border-radius: 25px;
+    -webkit-box-shadow: 11px 87px 300px -94px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 87px 300px -94px rgba(0, 0, 0, 0.75);
+    box-shadow: 11px 87px 300px -94px rgba(0, 0, 0, 0.75);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#6743ff, #322bea);
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+    color: #fffff8;
+}
+
+.container .conteudo {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INÍCIO - PRIMEIRA COLUNA */
+
+.container #titulo {
+    margin-bottom: 15px;
+    color: #bbbbbb;
+}
+
+.container .conteudo #notageral {
+    height: 145px;
+    width: 145px;
+    border-radius: 50%;
+    background: linear-gradient(#4c22cc, #4634f2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .conteudo #notageral h1 {
+    font-size: 45px;
+}
+
+.container .conteudo #notageral span {
+    color: #bbbbbb;
+    font-size: 10px;
+}
+
+.container #avaliacao {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.container #descricao {
+    text-align: justify;
+    font-size: xx-small;
+    height: 7%;
+    width: 70%;
+    margin-top: 15px;
+    color: #bbbbbb;
+}
+
+/* FIM - PRIMEIRA COLUNA */
+/* INÍCIO - SEGUNDA COLUNA */
+
+#geral .container:last-child {
+    background: none;
+    background-color: #fff;
+    color: #00000f;
+}
+
+#geral .container:last-child #itenscol2 {
+    display: flex;
+    margin: 1vh 0;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container #itenscol2 .conteudo {
+    align-items: flex-start;
+}
+
+.container .conteudo .linha {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: smaller;
+    align-items: center;
+}
+
+.container .conteudo .linha img {
+    margin: 0 5px;
+}
+
+.container .conteudo .linha .nota {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.container .conteudo #primeira {
+    background-color: #fff6f5;
+    color: #d5787b;
+}
+
+.container .conteudo #segunda {
+    background-color: #fffbf2;
+    color: #f6bd4f;
+}
+
+.container .conteudo #terceira {
+    background-color: #f2fbfa;
+    color: #84dfc6;
+}
+
+.container .conteudo #quarta {
+    background-color: #f3f3fd;
+    color: #1a24a0;
+}
+
+#botao input {
+    padding: 10px 70px;
+    cursor: pointer;
+    background: linear-gradient(#6743ff, #322bea);
+    color: #fffff8;
+    border-radius: 25px;
+}
+
+#botao input:hover {
+    background: none;
+    background-color: #303b59;
+}
+
+/* FIM - SEGUNDA COLUNA */
+/* INÍCIO - TELAS PARA CELULAR */
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    #fundo {
+        width: 100%;
+    }
+
+    #geral {
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .container {
+        border-radius: 0px;
+        border-end-start-radius: 25px;
+        border-end-end-radius: 25px;
+    }
+
+    #geral .container:last-child {
+        height: 130vh;
+    }
+
+    .container #itenscol2 {
+        width: 80%;
+    }
+
+    .container #itenscol2 .conteudo {
+        height: 75%;
+    }
+
+    .container #itenscol2 .conteudo .linha {
+        height: 6vh;
+        font-size: large;
+    }
+
+    #botao input {
+        padding: 15px 135px;
+    }
+}
+
+/* FIM - TELAS PARA CELULAR */
